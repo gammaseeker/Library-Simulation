@@ -68,7 +68,7 @@ public class Person {
 		String str = "";
 		if(this.items == null)
 		{
-			return null;
+			return "Not checking out any books";
 		}
 		for(int i = 0; i < this.items.length; i++)
 		{
