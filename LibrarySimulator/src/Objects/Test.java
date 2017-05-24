@@ -7,6 +7,8 @@ public class Test {
 		Person p1 = new Person("John", "Doe", 54);
 		System.out.println(p1);
 		
+		System.out.println();
+		
 		Book b1 = new Book("Brave New World", "Aldous Huxely");
 		Book b2 = new Book("Julius Caesar", "Shakespeare");
 		Book[] Books = new Book[2];

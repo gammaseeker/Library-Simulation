@@ -66,18 +66,30 @@ public class Person {
 	private String printBooks()
 	{
 		String str = "";
-		for(int i = 0; i < items.length; i++)
+		if(this.items == null)
 		{
-			str += items[i] + " ";
+			return null;
+		}
+		for(int i = 0; i < this.items.length; i++)
+		{
+			if(i == this.items.length - 1)
+			{
+				str += this.items[i];
+			}
+			else
+			{
+				str += this.items[i] + ", ";
+			}
+			
 		}
 		return str;
 	}
 	
 	public String toString()
 	{
-		return this.firstName + " " + this.lastName + 
-				"Books: " + printBooks() + 
-				"Library ID: " + this.libraryId +
+		return this.firstName + " " + this.lastName + "\n" +
+				"Books: " + printBooks() + "\n" +
+				"Library ID: " + this.libraryId + "\n" +
 				"Fees: $" + fees;  
 	}
 }
