@@ -9,7 +9,7 @@ public class Simulator implements Runnable{
 
 	@Override
 	public void run() {
-		System.out.println("Testeronies");
+		System.out.println("Test");
 		
 	}
 }
