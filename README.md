@@ -4,3 +4,4 @@ to create a library simulator implementing the queue data structure. Sadly, this
 had to move on with our curriculum. 
 Now that I currently have two years of experience in computer science, I have decided to challenge myself by finishing
 the library simulator with added features.
+Here is the Library Simulator 2016: http://snap.berkeley.edu/snapsource/snap.html#present:Username=gammaseeker&ProjectName=Library%20Checkout%20Simulation%20Starter
