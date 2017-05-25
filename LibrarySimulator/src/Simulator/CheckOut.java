@@ -1,15 +1,25 @@
 package Simulator;
+import java.util.*;
+
+import Objects.Book;
+import Objects.Person;
 
 public class CheckOut implements Runnable{
 
-	public CheckOut()
+	public Queue<Person> line = new ArrayDeque<Person>();
+	public CheckOut(Queue<Person> line)
 	{
-		
+		this.line = line;
 	}
 
+	
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
+		while(!line.isEmpty())
+		{
+			System.out.println(line.remove() + "\n");
+		}
+		
 		
 	}
 }

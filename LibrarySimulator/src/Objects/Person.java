@@ -98,6 +98,7 @@ public class Person {
 		return this.firstName + " " + this.lastName + "\n" +
 				"Books: " + printBooks() + "\n" +
 				"Library ID: " + this.libraryId + "\n" +
-				"Fees: $" + fees;  
+				"Fees: $" + Math.floor(fees * 100) / 100;
+		
 	}
 }
