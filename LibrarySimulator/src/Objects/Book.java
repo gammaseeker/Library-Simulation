@@ -58,7 +58,7 @@ public class Book {
 		this.log = log;
 	}
 	
-	public void borrowed()
+	public void borrow()
 	{
 		this.borrowed = true;
 	}

@@ -34,7 +34,7 @@ public class Person {
 		return this.lastName;
 	}
 	
-	public Stack getBooks()
+	public Stack<Book> getBooks()
 	{
 		return this.books;
 	}

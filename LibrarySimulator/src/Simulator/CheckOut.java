@@ -17,7 +17,11 @@ public class CheckOut implements Runnable{
 	public void run() {
 		while(!line.isEmpty())
 		{
-			System.out.println(line.remove() + "\n");
+			Person temp = line.remove();
+			Stack<Book> tempBooks = temp.getBooks();
+			Book tempBook = tempBooks.pop();
+			tempBook.borrow();
+			//System.out.println(line.remove() + "\n");
 		}
 		
 		
