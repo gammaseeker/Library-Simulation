@@ -15,12 +15,8 @@ public class Simulator implements Runnable{
 	}
 
 	@Override
-	public void run() {
-	/*	System.out.println(createPerson());
-		System.out.println();
-		System.out.println(createPerson());
-		System.out.println();
-		System.out.println(createPerson());*/
+	public void run() 
+	{
 		Person p1 = createPerson();
 		Person p2 = createPerson();
 		Person p3 = createPerson();
