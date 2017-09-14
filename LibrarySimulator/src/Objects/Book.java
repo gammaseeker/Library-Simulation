@@ -4,7 +4,6 @@ public class Book {
 	private String title;
 	private String author;
 	private int id;
-	private Log log;
 	public boolean borrowed;
 	
 	public Book(String title, String author)
@@ -14,12 +13,11 @@ public class Book {
 		borrowed = false;
 	}
 	
-	public Book(String title, String author, int id, Log log)
+	public Book(String title, String author, int id)
 	{
 		this.title = title;
 		this.author = author;
 		this.id = id;
-		this.log = log;
 		this.borrowed = false;
 	}
 	
@@ -38,11 +36,6 @@ public class Book {
 		return this.id;
 	}
 	
-	public Log getLog()
-	{
-		return this.log;
-	}
-	
 	public boolean isBorrowed()
 	{
 		return borrowed;
@@ -53,11 +46,6 @@ public class Book {
 		this.id = id;
 	}
 	
-	public void setLog(Log log)
-	{
-		this.log = log;
-	}
-	
 	public void borrow()
 	{
 		this.borrowed = true;
@@ -65,6 +53,6 @@ public class Book {
 	
 	public String toString()
 	{
-		return this.title;
+		return this.title + " by " + this.author;
 	}
 }
