@@ -49,6 +49,13 @@ public class Test {
 		System.out.println("Books: " + p1.getBooks());
 		System.out.println("ID: " + p1.getLibraryId());
 		System.out.println("Fees:" + p1.getFees());
+		
 		System.out.println(p2);// toString();
+		System.out.println("First Name: " + p2.getFirstName());
+		System.out.println("Last Name: " + p2.getLastName());
+		System.out.println("Books: " + p2.getBooks());
+		System.out.println("ID: " + p2.getLibraryId());
+		System.out.println("Fees:" + p2.getFees());
+		
 	}
 }
