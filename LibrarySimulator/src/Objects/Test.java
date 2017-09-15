@@ -6,7 +6,8 @@ public class Test {
 	public static void main(String[] args)
 	{
 		testBook();
-		
+		System.out.println();
+		testPerson();
 	}
 	
 	private static void testBook(){
